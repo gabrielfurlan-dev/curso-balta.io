@@ -1,0 +1,15 @@
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\bin\Debug\net6.0\HTMLTextEditor.exe
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\bin\Debug\net6.0\HTMLTextEditor.deps.json
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\bin\Debug\net6.0\HTMLTextEditor.runtimeconfig.json
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\bin\Debug\net6.0\HTMLTextEditor.dll
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\bin\Debug\net6.0\HTMLTextEditor.pdb
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\obj\Debug\net6.0\HTMLTextEditor.csproj.AssemblyReference.cache
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\obj\Debug\net6.0\HTMLTextEditor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\obj\Debug\net6.0\HTMLTextEditor.AssemblyInfoInputs.cache
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\obj\Debug\net6.0\HTMLTextEditor.AssemblyInfo.cs
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\obj\Debug\net6.0\HTMLTextEditor.csproj.CoreCompileInputs.cache
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\obj\Debug\net6.0\HTMLTextEditor.dll
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\obj\Debug\net6.0\refint\HTMLTextEditor.dll
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\obj\Debug\net6.0\HTMLTextEditor.pdb
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\obj\Debug\net6.0\HTMLTextEditor.genruntimeconfig.cache
+C:\Users\adria\source\repos\CursoBalta\HTMLTextEditor\obj\Debug\net6.0\ref\HTMLTextEditor.dll

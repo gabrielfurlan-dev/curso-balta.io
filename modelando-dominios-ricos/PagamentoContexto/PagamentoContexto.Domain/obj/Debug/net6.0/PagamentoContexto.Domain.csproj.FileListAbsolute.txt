@@ -1,0 +1,15 @@
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\bin\Debug\net6.0\PagamentoContexto.Domain.deps.json
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\bin\Debug\net6.0\PagamentoContexto.Domain.dll
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\bin\Debug\net6.0\PagamentoContexto.Domain.pdb
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\obj\Debug\net6.0\PagamentoContexto.Domain.csproj.AssemblyReference.cache
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\obj\Debug\net6.0\PagamentoContexto.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\obj\Debug\net6.0\PagamentoContexto.Domain.AssemblyInfoInputs.cache
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\obj\Debug\net6.0\PagamentoContexto.Domain.AssemblyInfo.cs
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\obj\Debug\net6.0\PagamentoContexto.Domain.csproj.CoreCompileInputs.cache
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\obj\Debug\net6.0\PagamentoContexto.Domain.dll
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\obj\Debug\net6.0\refint\PagamentoContexto.Domain.dll
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\obj\Debug\net6.0\PagamentoContexto.Domain.pdb
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\obj\Debug\net6.0\ref\PagamentoContexto.Domain.dll
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\bin\Debug\net6.0\PagamentoContexto.Shared.dll
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\bin\Debug\net6.0\PagamentoContexto.Shared.pdb
+C:\dev\PagamentoContexto\PagamentoContexto.Domain\obj\Debug\net6.0\PagamentoContexto.Domain.csproj.CopyComplete
