@@ -2,18 +2,18 @@ using PagamentoContexto.Domain.ValueObjects;
 
 namespace PagamentoContexto.Domain.Entities
 {
-    public class PaypalPagamento : Pagamento
+    public class PayPalPagamento : Pagamento
     {
         public string CodigoDeTransacao { get; private set; }
 
-        public PaypalPagamento(string codigoDeTransacao,
+        public PayPalPagamento(string codigoDeTransacao,
                                DateTime dataDePagamento,
                                DateTime dataDeExpiracao,
-                               DateTime total,
-                               DateTime totalPago,
+                               decimal total,
+                               decimal totalPago,
                                string emitente,
                                Documento documento,
-                               string endereco,
+                               Endereco endereco,
                                Email email) :base(dataDePagamento,
                                                    dataDeExpiracao,
                                                    total,

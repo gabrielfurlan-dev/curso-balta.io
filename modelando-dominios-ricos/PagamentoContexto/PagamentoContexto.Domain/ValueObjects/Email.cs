@@ -8,13 +8,13 @@ namespace PagamentoContexto.Domain.ValueObjects
     {
         public Email(string email)
         {
-             EmailValido = email;
+             Endereco = email;
 
              AddNotifications(new Contract<Notification>()
              .Requires()
              .IsEmail(email,"Email.EmailValido", "E-mail inválido."));
         }
         
-        public string EmailValido { get; private set; }
+        public string Endereco { get; private set; }
     }
 }

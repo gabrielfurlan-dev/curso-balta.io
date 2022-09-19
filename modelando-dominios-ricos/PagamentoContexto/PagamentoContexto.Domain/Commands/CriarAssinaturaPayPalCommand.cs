@@ -1,8 +1,9 @@
+using PagamentoContexto.Domain.Enums;
 using PagamentoContexto.Domain.ValueObjects;
 
 namespace PagamentoContexto.Domain.Commands
 {
-    public class CriarAssinaturaPayPalCommand
+    public class CriarAssinaturaPagamentoComPayPalCommand
     {
         //Nome
         public string PrimeiroNome { get; set; }
@@ -21,12 +22,13 @@ namespace PagamentoContexto.Domain.Commands
         public string NumeroPagamento { get; set; }
         public DateTime DataDePagamento { get; set; }
         public DateTime DataDeExpiracao { get; set; }
-        public DateTime Total { get; set; }
-        public DateTime TotalPago { get; set; }
+        public decimal Total { get; set; }
+        public decimal TotalPago { get; set; }
         public string Emitente { get; set; }
-        public Documento DocumentoEmitente { get; set; }
-        public string EnderecoEmitente { get; set; }
-        public Email EmailEmitente { get; set; }
+        public string DocumentoPagamento { get; set; }
+        public TipoDocumento TipoDocumentoPagamento { get; set; }
+        public Endereco EnderecoPagamento { get; set; }
+        public Email EmailPagamento { get; set; }
 
         //Endereco
         public string Rua { get; set; }

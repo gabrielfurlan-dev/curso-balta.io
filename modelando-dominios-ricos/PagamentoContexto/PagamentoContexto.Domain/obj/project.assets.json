@@ -58,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\PagamentoContexto\\PagamentoContexto.Domain\\PagamentoContexto.Domain.csproj",
+      "projectUniqueName": "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Domain\\PagamentoContexto.Domain.csproj",
       "projectName": "PagamentoContexto.Domain",
-      "projectPath": "C:\\dev\\PagamentoContexto\\PagamentoContexto.Domain\\PagamentoContexto.Domain.csproj",
+      "projectPath": "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Domain\\PagamentoContexto.Domain.csproj",
       "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\PagamentoContexto\\PagamentoContexto.Domain\\obj\\",
+      "outputPath": "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -84,8 +84,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\dev\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj": {
-              "projectPath": "C:\\dev\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj"
+            "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj": {
+              "projectPath": "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj"
             }
           }
         }

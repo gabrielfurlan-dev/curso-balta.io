@@ -1,7 +1,9 @@
 
+using Flunt.Notifications;
+
 namespace PagamentoContexto.Domain.Entities
 {
-    public class Assinatura
+    public class Assinatura : Notifiable<Notification>
     {
 
         IList<Pagamento> _pagamentos;

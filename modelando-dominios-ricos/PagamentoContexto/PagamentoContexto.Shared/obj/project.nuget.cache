@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zHr3WhFsLAvRzr7n73CL3sHLNEWuPEuJ+0kYtaiWKSymOJbxvtJ+RkcGLP7Qt92K/5YY9v2hHnDRn0V59C1vEw==",
+  "dgSpecHash": "73rKd6ZaJEiJfSA6R1PLr/9wWH39JjZwQG96lJFwDvB+ms7gTxncGDQQyEYDtMOSD1XtQ3XCsP3ir/+uQq27Dw==",
   "success": true,
-  "projectFilePath": "C:\\dev\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj",
+  "projectFilePath": "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adria\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
   ],

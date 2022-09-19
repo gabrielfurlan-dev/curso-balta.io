@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj": {}
+    "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj": {}
   },
   "projects": {
-    "C:\\dev\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj": {
+    "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj",
+        "projectUniqueName": "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj",
         "projectName": "PagamentoContexto.Shared",
-        "projectPath": "C:\\dev\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj",
+        "projectPath": "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Shared\\PagamentoContexto.Shared.csproj",
         "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\PagamentoContexto\\PagamentoContexto.Shared\\obj\\",
+        "outputPath": "C:\\dev\\curso-balta.io\\modelando-dominios-ricos\\PagamentoContexto\\PagamentoContexto.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config",

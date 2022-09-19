@@ -1,6 +1,7 @@
 using System.Diagnostics.Contracts;
 using Flunt.Notifications;
 using Flunt.Validations;
+using PagamentoContexto.Domain.Enums;
 using PagamentoContexto.Domain.ValueObjects;
 using PagamentoContexto.Shared.Commands;
 
@@ -20,19 +21,20 @@ namespace PagamentoContexto.Domain.Commands
         public string Email { get; set; }
 
         //Boleto
-        public string CodigoDeTransacao { get; set; }
+        public string CodigoDeBarras { get; set; }
         public string NumeroBoleto { get; set; }
 
         //Pagamento
         public string NumeroPagamento { get; set; }
         public DateTime DataDePagamento { get; set; }
         public DateTime DataDeExpiracao { get; set; }
-        public DateTime Total { get; set; }
-        public DateTime TotalPago { get; set; }
+        public decimal Total { get; set; }
+        public decimal TotalPago { get; set; }
         public string Emitente { get; set; }
-        public Documento DocumentoEmitente { get; set; }
-        public string EnderecoEmitente { get; set; }
-        public Email EmailEmitente { get; set; }
+        public string DocumentoPagamento { get; set; }
+        public TipoDocumento TipoDocumentoPagamento { get; set; }
+        public Endereco EnderecoPagamento { get; set; }
+        public Email EmailPagamento { get; set; }
 
         //Endereco
         public string Rua { get; set; }
