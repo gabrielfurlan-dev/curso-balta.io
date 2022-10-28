@@ -1,0 +1,8 @@
+C:\dev\curso-balta.io\dominando-injecao-de-dependencia\dominando-injecao-de-dependencia\obj\Debug\net6.0\dominando-injecao-de-dependencia.csproj.AssemblyReference.cache
+C:\dev\curso-balta.io\dominando-injecao-de-dependencia\dominando-injecao-de-dependencia\obj\Debug\net6.0\dominando-injecao-de-dependencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\curso-balta.io\dominando-injecao-de-dependencia\dominando-injecao-de-dependencia\obj\Debug\net6.0\dominando-injecao-de-dependencia.AssemblyInfoInputs.cache
+C:\dev\curso-balta.io\dominando-injecao-de-dependencia\dominando-injecao-de-dependencia\obj\Debug\net6.0\dominando-injecao-de-dependencia.AssemblyInfo.cs
+C:\dev\curso-balta.io\dominando-injecao-de-dependencia\dominando-injecao-de-dependencia\obj\Debug\net6.0\dominando-injecao-de-dependencia.csproj.CoreCompileInputs.cache
+C:\dev\curso-balta.io\dominando-injecao-de-dependencia\dominando-injecao-de-dependencia\obj\Debug\net6.0\dominando-injecao-de-dependencia.MvcApplicationPartsAssemblyInfo.cache
+C:\dev\curso-balta.io\dominando-injecao-de-dependencia\dominando-injecao-de-dependencia\obj\Debug\net6.0\dominando-injecao-de-dependencia.RazorAssemblyInfo.cache
+C:\dev\curso-balta.io\dominando-injecao-de-dependencia\dominando-injecao-de-dependencia\obj\Debug\net6.0\dominando-injecao-de-dependencia.RazorAssemblyInfo.cs
