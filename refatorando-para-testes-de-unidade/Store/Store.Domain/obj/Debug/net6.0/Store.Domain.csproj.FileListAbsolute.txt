@@ -1,0 +1,15 @@
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\obj\Debug\net6.0\Store.Domain.csproj.AssemblyReference.cache
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\obj\Debug\net6.0\Store.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\obj\Debug\net6.0\Store.Domain.AssemblyInfoInputs.cache
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\obj\Debug\net6.0\Store.Domain.AssemblyInfo.cs
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\obj\Debug\net6.0\Store.Domain.csproj.CoreCompileInputs.cache
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\bin\Debug\net6.0\Store.Domain.exe
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\bin\Debug\net6.0\Store.Domain.deps.json
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\bin\Debug\net6.0\Store.Domain.runtimeconfig.json
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\bin\Debug\net6.0\Store.Domain.dll
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\bin\Debug\net6.0\Store.Domain.pdb
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\obj\Debug\net6.0\Store.Domain.dll
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\obj\Debug\net6.0\refint\Store.Domain.dll
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\obj\Debug\net6.0\Store.Domain.pdb
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\obj\Debug\net6.0\Store.Domain.genruntimeconfig.cache
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Domain\obj\Debug\net6.0\ref\Store.Domain.dll
