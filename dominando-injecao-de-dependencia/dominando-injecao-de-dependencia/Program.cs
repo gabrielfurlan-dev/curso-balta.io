@@ -1,11 +1,9 @@
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<Configuration>();
-builder.Services.AddScoped(x => new SqlConnection("CONN_STRING"));
-builder.Services.AddTransient<ICustomerRepository, CustomerRepository>();
-builder.Services.AddTransient<IDeliveryFeeService, DeliveryFeeService>();
-builder.Services.AddTransient<IPromoCodeRepository, PromoCodeRepository>();
-
+builder.Services.AddSqlConnection(builder.Configuration.GetConnectionString("Default connection"));
+builder.Services.AddRepository();
+builder.Services.AddService();
 
 var app = builder.Build();
 
