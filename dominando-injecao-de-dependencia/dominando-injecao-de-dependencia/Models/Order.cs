@@ -2,14 +2,15 @@
 
 public class Order
 {
-    public Order(DateTime date, decimal deliveryFee, decimal discount, List<Product> produtcts)
+    public Order(DateTime date, decimal deliveryFee, decimal discount, List<Product> products)
     {
-        this.Code = Guid.NewGuid().ToString().Substring(0, 8);
-        this.Date = date;
-        this.DeliveryFee = deliveryFee;
-        this.Discount = discount;
-        Products = produtcts;
+        Code = Guid.NewGuid().ToString().Substring(0,8);
+        Date = date;
+        DeliveryFee = deliveryFee;
+        Discount = discount;
+        Products = products;
     }
+
     public string Code { get; set; }
     public DateTime Date { get; set; }
     public decimal DeliveryFee { get; set; }

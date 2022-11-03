@@ -24,22 +24,16 @@ public class OrderController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Place(string customerId, string zipCode, string promoCode, int[] products)
     {
-        // #1 - Recupera o cliente
         var customer = _customerRepository.GetByIdAsync(customerId);
 
         if (customer is null)
                 NotFound();
 
-        // #2 - Calcula o frete
         decimal deliveryFee = await _deliveryFeeService.GetDeliveryFeeAsync(zipCode);
         PromoCode? cupom = await _promoCodeRepository.GetPromoCodeById(promoCode);
         decimal discount = cupom?.Value ?? 0M;
-        var order = new Order(DateTime.Now, deliveryFee, discount, products, )
+        var order = new Order(DateTime.Now(), deliveryFee, discount, new List<Product>());
 
-        // #7 - Retorna
-        return Ok(new
-        {
-            Message = $"Pedido gerado com sucesso!"
-        });
+        return Ok($"Pedido {order.Code} gerado com sucesso!");
     }
 }
