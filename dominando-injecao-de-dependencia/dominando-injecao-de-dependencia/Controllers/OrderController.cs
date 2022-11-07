@@ -1,9 +1,7 @@
-﻿using Dapper;
-using DependencyStore.Models;
+﻿using DependencyStore.Models;
 using dominando_injecao_de_dependencia.Repositories.Contracts;
 using dominando_injecao_de_dependencia.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
 
 namespace DependencyStore.Controllers;
 
@@ -32,7 +30,7 @@ public class OrderController : ControllerBase
         decimal deliveryFee = await _deliveryFeeService.GetDeliveryFeeAsync(zipCode);
         PromoCode? cupom = await _promoCodeRepository.GetPromoCodeById(promoCode);
         decimal discount = cupom?.Value ?? 0M;
-        var order = new Order(DateTime.Now(), deliveryFee, discount, new List<Product>());
+        var order = new Order(DateTime.Now, deliveryFee, discount, new List<Product>());
 
         return Ok($"Pedido {order.Code} gerado com sucesso!");
     }
