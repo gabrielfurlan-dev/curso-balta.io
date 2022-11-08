@@ -1,7 +1,9 @@
+using Store.Domain.Entities;
+
 namespace Store.Domain.Repository
 {
-    public class IDescontoRepository
+    public interface IDescontoRepository
     {
-        
+        public Desconto Obter(string codigo);
     }
 }

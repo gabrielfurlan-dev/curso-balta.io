@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LvTsY/LlNOiIwRVQmSQZZ3AN4llGKDR+HDSeKZkbQXzXAMhUFIOKPdc68GrNuOsoiy/2+jJ6INu4kXhtE/8Pgw==",
+  "dgSpecHash": "1Ka6XgGipYx1qh8yO/He25/8BMVKzKqcIszmQ1tvywiUiMVLDzxR9R5C9di3s1BJWPO/7iH68QR5A6ENAvYxMw==",
   "success": true,
   "projectFilePath": "C:\\dev\\curso-balta.io\\refatorando-para-testes-de-unidade\\Store\\Store.Tests\\Store.Tests.csproj",
   "expectedPackageFiles": [

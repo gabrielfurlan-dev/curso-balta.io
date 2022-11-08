@@ -17,6 +17,6 @@ namespace Store.Domain.Entities
             => Preco * Quantidade;
 
         public bool Valido()
-            => (Produto != null || Quantidade > 0);
+            => (Produto != null && Quantidade > 0);
     }
 }
