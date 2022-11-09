@@ -2,7 +2,7 @@ namespace Store.Domain.Entities
 {
     public class Pedido : Entity
     {
-        public Pedido(Cliente cliente, decimal desconto, decimal taxaDeEntrega)
+        public Pedido(Cliente cliente, Desconto desconto, decimal taxaDeEntrega)
         {
             Numero = Guid.NewGuid().ToString().Substring(0, 8);
             Status = EStatusPedido.NovoPedido;
@@ -17,14 +17,18 @@ namespace Store.Domain.Entities
         public Cliente Cliente { get; set; }
         public DateTime Data { get; set; }
         public IList<ItemDoPedido> Itens { get; set; }
-        public decimal Desconto { get; set; }
+        public Desconto Desconto { get; set; }
         public decimal TaxaDeEntrega { get; set; }
         public EStatusPedido Status { get; set; }
         public decimal ValorTotal { get; private set; }
         public decimal Troco { get; set; }
 
-        private void AtualizarValorTotal() 
-            => ValorTotal = (Itens.Sum(x => x.Preco * x.Quantidade) - Desconto) + TaxaDeEntrega;
+        private void AtualizarValorTotal()
+        {
+            var desconto = Desconto != null ? Desconto.Valor() : 0;
+
+            ValorTotal = (Itens.Sum(x => x.Preco * x.Quantidade) - desconto) + TaxaDeEntrega;
+        }
 
         public void AdicionarItem(Produto produto, int quantidade)
         {

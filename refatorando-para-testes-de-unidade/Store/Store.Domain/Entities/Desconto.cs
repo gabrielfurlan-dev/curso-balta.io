@@ -6,28 +6,22 @@ namespace Store.Domain.Entities
     {
         public Desconto(decimal total, DateTime dataDeExpiracao)
         {
-            Total = total;
+            ValorDesconto = total;
             DataDeExpiracao = dataDeExpiracao;
         }
 
-        public decimal Total { get; private set; }
-        public DateTime DataDeExpiracao { get; private set; }
-        public EStatusdoPedido Status { get; set; }
+        private decimal ValorDesconto { get; set; }
+        private DateTime DataDeExpiracao { get; set; }
 
         public bool Valido()
-        => DateTime.Compare(DateTime.Now, DataDeExpiracao) < 0;
+        => DateTime.Now <  DataDeExpiracao;
 
         public decimal Valor()
         {
             if (Valido())
-                return Total;
+                return ValorDesconto;
             else
                 return 0;
         }
-        public void Cancel()
-        {
-            Status = EStatusdoPedido.Cancelado;           
-        }
     }
-
 }

@@ -1,4 +1,4 @@
-namespace Store.Domain.Repository
+namespace Store.Domain.Repositories
 {
     public interface ITaxaDeEntregaRepository
     {

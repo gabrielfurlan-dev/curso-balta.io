@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Store.Domain.Entities;
-using Store.Domain.Repository;
+using Store.Domain.Repositories;
 
 namespace Store.Tests.Repositories
 {
