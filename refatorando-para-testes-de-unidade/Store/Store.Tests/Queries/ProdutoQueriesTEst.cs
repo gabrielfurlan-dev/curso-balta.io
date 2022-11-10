@@ -7,12 +7,12 @@ using Store.Domain.Enuns;
 namespace Store.Tests.Queries
 {
     [TestClass]
-    public class ProdutoQueriesTEst
+    public class ProdutoQueriesTest
     {
 
         private IList<Produto> _produtos;
 
-        public ProdutoQueriesTEst()
+        public ProdutoQueriesTest()
         {
             _produtos = new List<Produto>();
             _produtos.Add(new Produto("Produto 001", 1m, true));
@@ -39,6 +39,24 @@ namespace Store.Tests.Queries
             var sut = produtos.AsQueryable().Where(ProdutoQueries.RetornarApenasProdutosAtivos());
 
             Assert.AreEqual(0, sut.Count()); 
+        }
+
+        [TestMethod]
+        [TestCategory("domain")]
+        public void Dado_a_consulta_com_produtos_ativos_e_inativos_deve_retornar_somente_os_ativos()
+        {
+            var sut = _produtos.AsQueryable().Where(ProdutoQueries.RetornarApenasProdutosAtivos());
+
+            Assert.AreEqual(3, sut.Count());
+        }
+
+        [TestMethod]
+        [TestCategory("domain")]
+        public void Dado_a_consulta_com_produtos_ativos_e_inativos_deve_retornar_somente_os_inativos()
+        {
+            var sut = _produtos.AsQueryable().Where(ProdutoQueries.RetornarApenasProdutosInativos());
+
+            Assert.AreEqual(2, sut.Count());
         }
     }
 }
