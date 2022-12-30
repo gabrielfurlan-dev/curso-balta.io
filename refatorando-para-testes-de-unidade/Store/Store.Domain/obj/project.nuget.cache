@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "r17F0U7tIEr5gyqFewUOI2eh7ebyaLIgCoBRvACSbzQ6m8iN46DgCnrBMXJsr0nwWdjDmDloj9v8UCnFiUquZQ==",
+  "dgSpecHash": "O7S0lBztrXxPsG1pi0jgci8bzI8jZ/qGAwBonFRh58n0imFjaXvI2METFnDr2l6WNUHK0e3LfK2BBPyghHIzeQ==",
   "success": true,
   "projectFilePath": "C:\\dev\\curso-balta.io\\refatorando-para-testes-de-unidade\\Store\\Store.Domain\\Store.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\adria\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

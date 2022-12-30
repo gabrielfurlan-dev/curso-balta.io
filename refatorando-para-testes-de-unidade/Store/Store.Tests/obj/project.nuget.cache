@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1Ka6XgGipYx1qh8yO/He25/8BMVKzKqcIszmQ1tvywiUiMVLDzxR9R5C9di3s1BJWPO/7iH68QR5A6ENAvYxMw==",
+  "dgSpecHash": "3qvc4GaVSijETasTD5c1RfSDoSvHih4GlOS1PFUkb+9f7V25s/WmOHuJzGgEXN3MPWHbnDKXjwZ83kOwQrJIeA==",
   "success": true,
   "projectFilePath": "C:\\dev\\curso-balta.io\\refatorando-para-testes-de-unidade\\Store\\Store.Tests\\Store.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adria\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.net.test.sdk\\16.11.0\\microsoft.net.test.sdk.16.11.0.nupkg.sha512",

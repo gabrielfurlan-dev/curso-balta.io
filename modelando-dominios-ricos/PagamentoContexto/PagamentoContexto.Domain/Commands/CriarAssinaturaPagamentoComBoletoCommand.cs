@@ -1,4 +1,3 @@
-using System.Diagnostics.Contracts;
 using Flunt.Notifications;
 using Flunt.Validations;
 using PagamentoContexto.Domain.Enums;

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Store.Tests/1.0.0": {
         "dependencies": {
+          "Flunt": "2.0.5",
           "MSTest.TestAdapter": "2.2.7",
           "MSTest.TestFramework": "2.2.7",
           "Microsoft.NET.Test.Sdk": "16.11.0",
@@ -19,6 +20,14 @@
         }
       },
       "coverlet.collector/3.1.0": {},
+      "Flunt/2.0.5": {
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {
+            "assemblyVersion": "2.0.5.0",
+            "fileVersion": "2.0.5.0"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/16.11.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -1078,6 +1087,9 @@
         }
       },
       "Store.Domain/1.0.0": {
+        "dependencies": {
+          "Flunt": "2.0.5"
+        },
         "runtime": {
           "Store.Domain.dll": {}
         }
@@ -1096,6 +1108,13 @@
       "sha512": "sha512-YzYqSRrjoP5lULBhTDcTOjuM4IDPPi6PhFsl4w8EI4WdZhE6llt7E38Tg4CHyrS+QKwyu1+9OwkdDgluOdoBTw==",
       "path": "coverlet.collector/3.1.0",
       "hashPath": "coverlet.collector.3.1.0.nupkg.sha512"
+    },
+    "Flunt/2.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "path": "flunt/2.0.5",
+      "hashPath": "flunt.2.0.5.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.11.0": {
       "type": "package",

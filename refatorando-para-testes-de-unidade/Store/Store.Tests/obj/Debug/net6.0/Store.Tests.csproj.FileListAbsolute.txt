@@ -102,3 +102,4 @@ c:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Tests\obj\D
 c:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Tests\obj\Debug\net6.0\Store.Tests.pdb
 c:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Tests\obj\Debug\net6.0\Store.Tests.genruntimeconfig.cache
 c:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Tests\obj\Debug\net6.0\ref\Store.Tests.dll
+C:\dev\curso-balta.io\refatorando-para-testes-de-unidade\Store\Store.Tests\bin\Debug\net6.0\Flunt.dll
