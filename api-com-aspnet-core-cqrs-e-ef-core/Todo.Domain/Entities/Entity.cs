@@ -2,7 +2,7 @@ using System;
 using Flunt;
 using Flunt.Notifications;
 
-namespace Todo.Domain.Entities
+namespace ToDo.Domain.Entities
 {
     public abstract class Entity :  Notifiable<Notification>, IEquatable<Entity>
     {

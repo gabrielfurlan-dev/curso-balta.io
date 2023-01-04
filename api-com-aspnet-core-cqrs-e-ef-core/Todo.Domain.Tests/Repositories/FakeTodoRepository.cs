@@ -1,17 +1,23 @@
-using Todo.Domain.Entities;
-using Todo.Domain.Repositories.Contracts;
+using ToDo.Domain.Entities;
+using ToDo.Domain.Repositories.Contracts;
 
-namespace Todo.Domain.Tests.Repositories
+namespace ToDo.Domain.Tests.Repositories
 {
-    public class FakeTodoRepository : ITodoRepository
+    public class FakeTodoRepository : IToDoRepository
     {
-        public void AtualizarTitulo(string? title) { }
+        public IEnumerable<ToDoItem> GetAll(string refUser) { throw new NotImplementedException(); }
 
-        public void Gravar(TodoItem todo) { }
+        public IEnumerable<ToDoItem> GetAllDone(string refUser) { throw new NotImplementedException(); }
 
-        public TodoItem ObterItemPorId(Guid id, string? refUser)
-            => new TodoItem("Nome Tarefa",DateTime.Now, "Referência de usuário");
+        public IEnumerable<ToDoItem> GetAllUndone(string refUser) { throw new NotImplementedException(); }
 
-        public void SalvarAtualizacoes(object item) { }
+        public IEnumerable<ToDoItem> GetByPeriod(string refUser, bool done, DateTime date) { throw new NotImplementedException(); }
+
+        public void Gravar(ToDoItem todo) { }
+
+        public ToDoItem GetToDoById(Guid id, string? refUser)
+            => new ToDoItem("Nome Tarefa",DateTime.Now, "Referência de usuário");
+
+        public void Update(ToDoItem item) { }
     }
 }

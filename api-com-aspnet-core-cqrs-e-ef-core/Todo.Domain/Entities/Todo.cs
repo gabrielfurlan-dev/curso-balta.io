@@ -1,8 +1,8 @@
-namespace Todo.Domain.Entities
+namespace ToDo.Domain.Entities
 {
-    public class TodoItem : Entity
+    public class ToDoItem : Entity
     {
-        public TodoItem(string title, DateTime date, string refUser)
+        public ToDoItem(string title, DateTime date, string refUser)
         {
             Title = title;
             Done = false;

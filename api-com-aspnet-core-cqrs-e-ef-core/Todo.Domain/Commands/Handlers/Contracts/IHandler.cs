@@ -1,6 +1,6 @@
-using Todo.Domain.Commands.Inputs.Contracts;
+using ToDo.Domain.Commands.Inputs.Contracts;
 
-namespace Todo.Domain.Commands.Handlers.Contracts
+namespace ToDo.Domain.Commands.Handlers.Contracts
 {
     public interface IHandler<T> where T : ICommand
     {

@@ -36,3 +36,6 @@ C:\dev\curso-balta.io\api-com-aspnet-core-cqrs-e-ef-core\Todo.Domain.Api\obj\Deb
 C:\dev\curso-balta.io\api-com-aspnet-core-cqrs-e-ef-core\Todo.Domain.Api\obj\Debug\net7.0\Todo.Domain.Api.pdb
 C:\dev\curso-balta.io\api-com-aspnet-core-cqrs-e-ef-core\Todo.Domain.Api\obj\Debug\net7.0\Todo.Domain.Api.genruntimeconfig.cache
 C:\dev\curso-balta.io\api-com-aspnet-core-cqrs-e-ef-core\Todo.Domain.Api\obj\Debug\net7.0\ref\Todo.Domain.Api.dll
+C:\dev\curso-balta.io\api-com-aspnet-core-cqrs-e-ef-core\Todo.Domain.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\dev\curso-balta.io\api-com-aspnet-core-cqrs-e-ef-core\Todo.Domain.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\dev\curso-balta.io\api-com-aspnet-core-cqrs-e-ef-core\Todo.Domain.Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll

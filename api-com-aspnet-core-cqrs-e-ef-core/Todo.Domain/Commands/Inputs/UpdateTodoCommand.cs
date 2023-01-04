@@ -1,8 +1,8 @@
 using Flunt.Notifications;
 using Flunt.Validations;
-using Todo.Domain.Commands.Inputs.Contracts;
+using ToDo.Domain.Commands.Inputs.Contracts;
 
-namespace Todo.Domain.Commands
+namespace ToDo.Domain.Commands
 {
     public class UpdateTodoCommand : Notifiable<Notification>, ICommand
     {

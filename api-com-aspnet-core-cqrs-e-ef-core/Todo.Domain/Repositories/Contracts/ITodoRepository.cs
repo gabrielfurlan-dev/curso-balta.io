@@ -1,17 +1,17 @@
-using Todo.Domain.Entities;
+using ToDo.Domain.Entities;
 
-namespace Todo.Domain.Repositories.Contracts
+namespace ToDo.Domain.Repositories.Contracts
 {
-    public interface ITodoRepository
+    public interface IToDoRepository
     {
-        TodoItem ObterItemPorId(Guid id, string? refUser);
-        void Gravar(TodoItem todo);
-        void AtualizarTitulo(string? title);
-        void SalvarAtualizacoes(object item);
+        
+        void Gravar(ToDoItem todo);
+        ToDoItem GetToDoById(Guid id, string? refUser);
+        void Update(ToDoItem item);
 
-        IEnumerable<TodoItem> GetAll(string refUser);
-        IEnumerable<TodoItem> GetAllDone(string refUser);
-        IEnumerable<TodoItem> GetAllUndone(string refUser);
-        IEnumerable<TodoItem> GetByPeriod(string refUser, bool done, DateTime date);
+        IEnumerable<ToDoItem> GetAll(string refUser);
+        IEnumerable<ToDoItem> GetAllDone(string refUser);
+        IEnumerable<ToDoItem> GetAllUndone(string refUser);
+        IEnumerable<ToDoItem> GetByPeriod(string refUser, bool done, DateTime date);
     }
 }

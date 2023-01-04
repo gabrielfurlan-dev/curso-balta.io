@@ -1,21 +1,21 @@
 using Flunt.Notifications;
-using Todo.Domain.Commands.Handlers.Contracts;
-using Todo.Domain.Commands.Inputs;
-using Todo.Domain.Commands.Inputs.Contracts;
-using Todo.Domain.Entities;
-using Todo.Domain.Repositories.Contracts;
+using ToDo.Domain.Commands.Handlers.Contracts;
+using ToDo.Domain.Commands.Inputs;
+using ToDo.Domain.Commands.Inputs.Contracts;
+using ToDo.Domain.Entities;
+using ToDo.Domain.Repositories.Contracts;
 
-namespace Todo.Domain.Commands.Handlers
+namespace ToDo.Domain.Commands.Handlers
 {
     public class ToDoHandler :
     Notifiable<Notification>,
     IHandler<CreateToDoCommand>
 
     {
-        public ToDoHandler(ITodoRepository repository)
+        public ToDoHandler(IToDoRepository repository)
             => _repository = repository;
 
-        private readonly ITodoRepository _repository;
+        private readonly IToDoRepository _repository;
 
         public ICommandResult Handle(CreateToDoCommand command)
         {
@@ -24,9 +24,11 @@ namespace Todo.Domain.Commands.Handlers
                 if (!command.Validate())
                     throw new Exception();
 
-                var todo = new TodoItem(command.Title, command.Date, command.RefUser);
+                var todo = new ToDoItem(command.Title, command.Date, command.RefUser);
 
-                return new GenericCommandResult(true, "", command);
+                _repository.Gravar(todo);
+
+                return new GenericCommandResult(true, "Tarefa criada com sucesso!", command);
             }
             catch (System.Exception)
             {

@@ -1,6 +1,6 @@
-using Todo.Domain.Commands.Inputs;
+using ToDo.Domain.Commands.Inputs;
 
-namespace Todo.Domain.Tests.Commands.Inputs;
+namespace ToDo.Domain.Tests.Commands.Inputs;
 
 [TestClass]
 public class CreateTodoCommandTests

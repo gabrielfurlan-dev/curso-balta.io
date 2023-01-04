@@ -1,8 +1,8 @@
-using Todo.Domain.Commands.Handlers;
-using Todo.Domain.Commands.Inputs;
-using Todo.Domain.Tests.Repositories;
+using ToDo.Domain.Commands.Handlers;
+using ToDo.Domain.Commands.Inputs;
+using ToDo.Domain.Tests.Repositories;
 
-namespace Todo.Domain.Tests.Commands.Handlers
+namespace ToDo.Domain.Tests.Commands.Handlers
 {
     [TestClass]
     public class TodoHandlerTests

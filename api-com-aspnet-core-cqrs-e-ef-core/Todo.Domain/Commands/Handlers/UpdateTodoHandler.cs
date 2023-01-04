@@ -1,15 +1,15 @@
-using Todo.Domain.Commands.Handlers.Contracts;
-using Todo.Domain.Commands.Inputs;
-using Todo.Domain.Commands.Inputs.Contracts;
-using Todo.Domain.Repositories.Contracts;
+using ToDo.Domain.Commands.Handlers.Contracts;
+using ToDo.Domain.Commands.Inputs;
+using ToDo.Domain.Commands.Inputs.Contracts;
+using ToDo.Domain.Repositories.Contracts;
 
-namespace Todo.Domain.Commands.Handlers
+namespace ToDo.Domain.Commands.Handlers
 {
     public class UpdateTodoHandler : IHandler<UpdateTodoCommand>
     {
-        private ITodoRepository _repository;
+        private IToDoRepository _repository;
 
-        public UpdateTodoHandler(ITodoRepository repository)
+        public UpdateTodoHandler(IToDoRepository repository)
         => _repository = repository;
 
         public ICommandResult Handle(UpdateTodoCommand command)
@@ -19,11 +19,11 @@ namespace Todo.Domain.Commands.Handlers
                 if (!command.Validate())
                     throw new Exception();
 
-                var item = _repository.ObterItemPorId(command.Id, command.RefUser);
+                var item = _repository.GetToDoById(command.Id, command.RefUser);
 
-                _repository.AtualizarTitulo(command.Title);
+                item.UpdateTitle(command.Title);
 
-                _repository.SalvarAtualizacoes(item);
+                _repository.Update(item);
 
                 return new GenericCommandResult(true, "Tarefa atualizada com sucesso.", item);
             }

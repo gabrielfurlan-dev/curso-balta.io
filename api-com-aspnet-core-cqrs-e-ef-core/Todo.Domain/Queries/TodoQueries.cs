@@ -1,23 +1,26 @@
 using System.Linq.Expressions;
-using Todo.Domain.Entities;
+using ToDo.Domain.Entities;
 
-namespace Todo.Domain.Queries
+namespace ToDo.Domain.Queries
 {
-    public static class TodoQueries
+    public static class ToDoQueries
     {
-        public static Expression<Func<TodoItem, bool>> GetAll(string refUser)
+        public static Expression<Func<ToDoItem, bool>> GetAll(string refUser)
             => x => x.RefUser == refUser;
 
-        public static Expression<Func<TodoItem, bool>> GetAllDone(string refUser)
+        public static Expression<Func<ToDoItem, bool>> GetAllDone(string refUser)
             => x => x.RefUser == refUser && x.Done;
 
-        public static Expression<Func<TodoItem, bool>> GetAllUndone(string refUser)
+        public static Expression<Func<ToDoItem, bool>> GetAllUndone(string refUser)
             => x => x.RefUser == refUser && !x.Done;
 
-        public static Expression<Func<TodoItem, bool>> GetByPeriod(string refUser, bool done, DateTime date)
+        public static Expression<Func<ToDoItem, bool>> GetByPeriod(string refUser, bool done, DateTime date)
             => x =>
              x.RefUser == refUser &&
              x.Done == done &&
              x.Date.Date == date.Date;
+
+        public static Expression<Func<ToDoItem, bool>> GetById(Guid id, string refUser)
+            => x => x.Id == id && x.RefUser == refUser;
     }
 }

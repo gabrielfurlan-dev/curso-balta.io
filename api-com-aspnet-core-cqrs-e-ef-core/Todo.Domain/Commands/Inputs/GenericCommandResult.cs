@@ -1,6 +1,6 @@
-using Todo.Domain.Commands.Inputs.Contracts;
+using ToDo.Domain.Commands.Inputs.Contracts;
 
-namespace Todo.Domain.Commands.Inputs
+namespace ToDo.Domain.Commands.Inputs
 {
     public class GenericCommandResult : ICommandResult
     {

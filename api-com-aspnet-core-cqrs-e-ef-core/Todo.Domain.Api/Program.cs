@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Todo.Domain.Commands.Handlers;
-using Todo.Domain.Infra.Contexts;
-using Todo.Domain.Repositories.Contracts;
+using ToDo.Domain.Commands.Handlers;
+using ToDo.Domain.Infra.Contexts;
+using ToDo.Domain.Infra.Repositories.ToDo;
+using ToDo.Domain.Repositories.Contracts;
 
 internal class Program
 {
@@ -14,9 +15,9 @@ internal class Program
 
         // builder.Services.AddDbContext<DataContext>(opt => opt.USeSqlServer(Configuration.GetConnectionString("connectionString")));
         builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
-        // builder.Services.AddTransient<ITodoRepository, TodoRepository>();
+        
+        builder.Services.AddTransient<IToDoRepository, ToDoRepository>();
         builder.Services.AddTransient<ToDoHandler, ToDoHandler>();
-
 
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
@@ -29,11 +30,21 @@ internal class Program
         {
             app.UseSwagger();
             app.UseSwaggerUI();
+            app.UseDeveloperExceptionPage();
         }
 
         app.UseHttpsRedirection();
 
+        app.UseRouting();
+
+        app.UseCors(x => x.AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .AllowAnyOrigin());
+
         app.UseAuthorization();
+        app.UseAuthorization();
+
+        app.UseEndpoints(endpoints => endpoints.MapControllers());
 
         app.MapControllers();
 
