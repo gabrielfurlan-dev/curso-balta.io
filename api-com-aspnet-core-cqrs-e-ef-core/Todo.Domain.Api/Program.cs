@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Todo.Domain.Commands.Handlers;
 using Todo.Domain.Infra.Contexts;
+using Todo.Domain.Repositories.Contracts;
 
 internal class Program
 {
@@ -9,7 +11,12 @@ internal class Program
 
         // Add services to the container.
         builder.Services.AddControllers();
+
+        // builder.Services.AddDbContext<DataContext>(opt => opt.USeSqlServer(Configuration.GetConnectionString("connectionString")));
         builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+        // builder.Services.AddTransient<ITodoRepository, TodoRepository>();
+        builder.Services.AddTransient<ToDoHandler, ToDoHandler>();
+
 
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
