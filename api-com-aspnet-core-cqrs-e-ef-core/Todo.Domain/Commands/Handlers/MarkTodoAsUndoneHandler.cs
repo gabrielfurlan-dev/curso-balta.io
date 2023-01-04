@@ -24,11 +24,11 @@ namespace ToDo.Domain.Commands.Handlers
 
                 _repository.Update(todo);
 
-                return new GenericCommandResult(true, "Tarefa concluída com sucesso.", null);
+                return new GenericCommandResult(true, "Tarefa desmarcada com sucesso.", null);
             }
             catch (System.Exception)
             {
-                return new GenericCommandResult(false, "Não foi possível concluir a tarefa.", null);
+                return new GenericCommandResult(false, "Não foi possível desmarcar a tarefa.", null);
             }
         }
     }

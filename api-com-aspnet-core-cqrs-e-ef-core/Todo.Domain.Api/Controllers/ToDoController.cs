@@ -43,15 +43,21 @@ namespace Todo.Domain.Api.Controllers
             [FromBody] MarkToDoAsDoneCommand command,
             [FromServices] MarkTodoAsDoneHandler handler
         )
-            => (GenericCommandResult)handler.Handle(command);
-
+        {
+            command.RefUser = "gabriefurlan";
+            return (GenericCommandResult)handler.Handle(command);
+        }
+        
         [HttpPut]
         [Route("mark-as-undone")]
         public GenericCommandResult MarkAsUndone(
                     [FromBody] MarkToDoAsUndoneCommand command,
                     [FromServices] MarkTodoAsUndoneHandler handler
         )
-                    => (GenericCommandResult)handler.Handle(command);
+        {
+            command.RefUser = "gabriefurlan";
+            return (GenericCommandResult)handler.Handle(command);
+        }
 
         //GET
         [HttpGet]

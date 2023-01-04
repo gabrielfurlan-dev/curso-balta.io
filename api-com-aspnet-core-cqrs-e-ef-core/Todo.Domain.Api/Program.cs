@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using ToDo.Domain.Commands;
 using ToDo.Domain.Commands.Handlers;
 using ToDo.Domain.Infra.Contexts;
 using ToDo.Domain.Infra.Repositories.ToDo;
@@ -19,8 +18,8 @@ internal class Program
         
         builder.Services.AddTransient<IToDoRepository, ToDoRepository>();
         builder.Services.AddTransient<CreateToDoHandler, CreateToDoHandler>();
-        builder.Services.AddTransient<MarkToDoAsDoneCommand, MarkToDoAsDoneCommand>();
-        builder.Services.AddTransient<MarkToDoAsUndoneCommand, MarkToDoAsUndoneCommand>();
+        builder.Services.AddTransient<MarkTodoAsDoneHandler , MarkTodoAsDoneHandler >();
+        builder.Services.AddTransient<MarkTodoAsUndoneHandler , MarkTodoAsUndoneHandler >();
 
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();

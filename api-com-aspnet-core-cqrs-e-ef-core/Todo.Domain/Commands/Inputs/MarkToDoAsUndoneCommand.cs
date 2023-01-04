@@ -22,7 +22,7 @@ namespace ToDo.Domain.Commands
             AddNotifications(
                 new Contract<Notification>()
                 .Requires()
-                .IsLowerThan(RefUser.Length, 6, "User", "Usuário invlálido")
+                .IsGreaterThan(RefUser.Length, 6, "User", "Usuário invlálido")
                 );
 
             return IsValid;
