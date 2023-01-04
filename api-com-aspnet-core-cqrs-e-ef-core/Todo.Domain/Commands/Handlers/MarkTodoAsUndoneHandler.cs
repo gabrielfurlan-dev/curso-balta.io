@@ -5,13 +5,13 @@ using ToDo.Domain.Repositories.Contracts;
 
 namespace ToDo.Domain.Commands.Handlers
 {
-    public class MarkTodoAsUndoneHandler : IHandler<MarkToDoAsDoneCommand>
+    public class MarkTodoAsUndoneHandler : IHandler<MarkToDoAsUndoneCommand>
     {
         private IToDoRepository _repository;
         public MarkTodoAsUndoneHandler(IToDoRepository repository)
             => _repository = repository;
 
-        public ICommandResult Handle(MarkToDoAsDoneCommand command)
+        public ICommandResult Handle(MarkToDoAsUndoneCommand command)
         {
             try
             {

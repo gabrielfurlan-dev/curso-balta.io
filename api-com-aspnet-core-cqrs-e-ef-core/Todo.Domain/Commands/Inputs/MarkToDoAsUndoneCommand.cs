@@ -14,7 +14,7 @@ namespace ToDo.Domain.Commands
             RefUser = refUser;
         }
 
-        public Guid? Id { get; set; }
+        public Guid Id { get; set; }
         public string RefUser { get; set; }
 
         public bool Validate()

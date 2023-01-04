@@ -12,7 +12,7 @@ namespace ToDo.Domain.Tests.Commands.Handlers
         {
             //Arrange
             var command = new CreateToDoCommand("", new DateTime(2022, 12, 28), "");
-            var sut = new ToDoHandler(new FakeTodoRepository());
+            var sut = new CreateToDoHandler(new FakeTodoRepository());
 
             //Act
             var result = (GenericCommandResult)sut.Handle(command);
@@ -26,7 +26,7 @@ namespace ToDo.Domain.Tests.Commands.Handlers
         {
             //Arrange
             var command = new CreateToDoCommand("Tarefa Teste", new DateTime(2022, 12, 28), "Referência de usuário");
-            var sut = new ToDoHandler(new FakeTodoRepository());
+            var sut = new CreateToDoHandler(new FakeTodoRepository());
 
             //Act
             var result = (GenericCommandResult)sut.Handle(command);

@@ -7,12 +7,12 @@ using ToDo.Domain.Repositories.Contracts;
 
 namespace ToDo.Domain.Commands.Handlers
 {
-    public class ToDoHandler :
+    public class CreateToDoHandler :
     Notifiable<Notification>,
     IHandler<CreateToDoCommand>
 
     {
-        public ToDoHandler(IToDoRepository repository)
+        public CreateToDoHandler(IToDoRepository repository)
             => _repository = repository;
 
         private readonly IToDoRepository _repository;
