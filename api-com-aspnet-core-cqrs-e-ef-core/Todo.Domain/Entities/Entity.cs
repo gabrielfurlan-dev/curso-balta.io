@@ -4,7 +4,7 @@ using Flunt.Notifications;
 
 namespace ToDo.Domain.Entities
 {
-    public abstract class Entity :  Notifiable<Notification>, IEquatable<Entity>
+    public abstract class Entity : IEquatable<Entity> //Notifiable<Notification>,
     {
         protected Entity()
         => Id = Guid.NewGuid();
