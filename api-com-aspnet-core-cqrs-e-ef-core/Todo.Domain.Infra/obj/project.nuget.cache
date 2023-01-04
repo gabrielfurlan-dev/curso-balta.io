@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EcdDg82nFtHC2Ecw6TJrjFL+ApduyB6Q/APJ7yd+plFMCR6/aUEnqn378E2UqmApIZfdnlegYkI8ZUJ/1M897w==",
+  "dgSpecHash": "fKCGZGvx3gUjE3wc8Tdi4Sd1KA8w98fa46vq+6uLVMmXioQqs6yp/wYqfc74TAQoJQWP0UMbW5dlSMkyBBHq1w==",
   "success": true,
   "projectFilePath": "C:\\dev\\curso-balta.io\\api-com-aspnet-core-cqrs-e-ef-core\\Todo.Domain.Infra\\Todo.Domain.Infra.csproj",
   "expectedPackageFiles": [
