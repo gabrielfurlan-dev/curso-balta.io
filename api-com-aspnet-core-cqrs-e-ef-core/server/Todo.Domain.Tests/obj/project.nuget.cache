@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+EYoq/RMFw1CZVxoNDm6fp0jxCPbTKwxKbzbYjQK7A0hUp1EaTJ8baEtaPJUnV9xzwTLhftJY/TmQJcOY+ldxA==",
+  "dgSpecHash": "e5Tr6nyQE+Aw/xLKw0gOBhaK4VvGWbvGehVbkoz5MVPulbuPOlgkX03n3osZBNlWtE7YIdYHi+1/jk3TUHQDdQ==",
   "success": true,
-  "projectFilePath": "C:\\dev\\curso-balta.io\\api-com-aspnet-core-cqrs-e-ef-core\\Todo.Domain.Tests\\Todo.Domain.Tests.csproj",
+  "projectFilePath": "C:\\dev\\curso-balta.io\\api-com-aspnet-core-cqrs-e-ef-core\\server\\Todo.Domain.Tests\\Todo.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adria\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",

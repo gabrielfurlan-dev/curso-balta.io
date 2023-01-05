@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using ToDo.Domain.Commands.Handlers;
 using ToDo.Domain.Infra.Contexts;
 using ToDo.Domain.Infra.Repositories.ToDo;
 using ToDo.Domain.Repositories.Contracts;
+using Microsoft.IdentityModel.Tokens;
 
 internal class Program
 {
@@ -15,11 +17,26 @@ internal class Program
         builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
         builder.Services.AddTransient<IToDoRepository, ToDoRepository>();
         builder.Services.AddTransient<CreateToDoHandler, CreateToDoHandler>();
-        builder.Services.AddTransient<MarkTodoAsDoneHandler , MarkTodoAsDoneHandler >();
-        builder.Services.AddTransient<MarkTodoAsUndoneHandler , MarkTodoAsUndoneHandler >();
+        builder.Services.AddTransient<MarkTodoAsDoneHandler, MarkTodoAsDoneHandler>();
+        builder.Services.AddTransient<MarkTodoAsUndoneHandler, MarkTodoAsUndoneHandler>();
 
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+        builder.Services
+        .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(options =>
+        {
+            options.Authority = "https://securetoken.google.com/apiaspnettodo";
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidIssuer = "https://securetoken.google.com/apiaspnettodo",
+                ValidateAudience = true,
+                ValidAudience = "apiaspnettodo",
+                ValidateLifetime = true
+            };
+        });
 
         var app = builder.Build();
         if (app.Environment.IsDevelopment())
