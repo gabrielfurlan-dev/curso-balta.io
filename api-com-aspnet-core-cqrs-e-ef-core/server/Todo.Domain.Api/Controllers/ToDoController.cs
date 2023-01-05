@@ -11,7 +11,7 @@ namespace Todo.Domain.Api.Controllers
 {
     [ApiController]
     [Route("v1/todos")]
-    [Authorize]
+    // [Authorize]
     public class ToDoController : ControllerBase
     {
         //POST

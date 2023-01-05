@@ -32,7 +32,7 @@ namespace ToDo.Domain.Commands.Handlers
             }
             catch (System.Exception)
             {
-                return new GenericCommandResult(false, "Command não é valido", command.Notifications);
+                return new GenericCommandResult(false, "Command não é valido.", command.Notifications);
             }
 
 
