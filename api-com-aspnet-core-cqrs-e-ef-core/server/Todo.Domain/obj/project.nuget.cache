@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xgsbqd4Bgvf0kcwz/fQlKmh40eFusKoXyblDglaN/jaH8zoDc529aAANTPw6bFujzn6bpOvVXptaGQqgqlC9uw==",
+  "success": true,
+  "projectFilePath": "C:\\dev\\curso-balta.io\\api-com-aspnet-core-cqrs-e-ef-core\\server\\Todo.Domain\\Todo.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriel Furlan\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
