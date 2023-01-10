@@ -13,7 +13,6 @@ internal class Program
         var builder = WebApplication.CreateBuilder(args);
 
         builder.Services.AddControllers();
-        // builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlServer("Data Source=DESKTOP-2BDQ1GT;Initial Catalog=ToDos;User ID=sa; pwd=adrvsc"));
         builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
         builder.Services.AddTransient<IToDoRepository, ToDoRepository>();
         builder.Services.AddTransient<CreateToDoHandler, CreateToDoHandler>();
