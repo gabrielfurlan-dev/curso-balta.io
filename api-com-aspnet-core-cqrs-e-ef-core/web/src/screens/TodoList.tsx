@@ -6,8 +6,19 @@ import axios from "axios"
 import firebase from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 
-// const firebaseConfig = {
-// };
+const firebaseConfig = {
+  //my firebase config here
+};
+
+// const app = initializeApp(firebaseConfig);
+
+// firebase.initializeApp(firebaseConfig);
+
+// export const auth = firebase.auth();
+
+// export const AuthContext = React.createContext<firebase.User | null>(null);
+
+// const db = getFirestore(app);
 
 
 const urlApi = "http://localhost:5291";

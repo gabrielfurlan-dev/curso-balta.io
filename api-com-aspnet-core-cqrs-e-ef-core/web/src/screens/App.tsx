@@ -1,13 +1,13 @@
 import React from "react"
-// import logo from "./logo.svg"
+// import logo from "
 import "./App.css"
+import SignUp from "./signUp"
 import TodoList from "./TodoList"
-import SignUp from "./screens/signUp"
 
 function App() {
   return (
     <div className="flex justify-center mt-20">
-      <TodoList/>
+      <SignUp />
     </div>
   )
 }
