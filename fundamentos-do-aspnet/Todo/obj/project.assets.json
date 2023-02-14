@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\fundamentos-do-aspnet.csproj",
-      "projectName": "fundamentos-do-aspnet",
-      "projectPath": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\fundamentos-do-aspnet.csproj",
+      "projectUniqueName": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Todo\\Todo.csproj",
+      "projectName": "Todo",
+      "projectPath": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Todo\\Todo.csproj",
       "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\obj\\",
+      "outputPath": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Todo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config",
