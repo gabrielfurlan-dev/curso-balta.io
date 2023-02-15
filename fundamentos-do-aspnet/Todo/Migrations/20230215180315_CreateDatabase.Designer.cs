@@ -11,7 +11,7 @@ using Todo.Models;
 namespace Todo.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230215132439_CreateDatabase")]
+    [Migration("20230215180315_CreateDatabase")]
     partial class CreateDatabase
     {
         /// <inheritdoc />
@@ -37,7 +37,7 @@ namespace Todo.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TodoModels");
+                    b.ToTable("Todos");
                 });
 #pragma warning restore 612, 618
         }
