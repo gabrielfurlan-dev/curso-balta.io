@@ -9,17 +9,22 @@ namespace Todo.Controllers
     {
         [HttpGet("/")]
         public IEnumerable<TodoModel> Get([FromServices] AppDbContext context)
-            =>  context.Todos.ToList();
+            => context.Todos.ToList();
 
         [HttpGet("/{id:int}")]
-        public TodoModel GetById(
+        public IActionResult GetById(
             [FromRoute] int id,
             [FromServices] AppDbContext context
             )
-            =>  context.Todos.FirstOrDefault(x => x.Id == id);
+        {
+            var model = context.Todos.FirstOrDefault(x => x.Id == id);
+            if (model is null) return NotFound();
+
+            return Ok(model);
+        }
 
         [HttpPost("/")]
-        public TodoModel Set(
+        public IActionResult Set(
             [FromBody] TodoModel todo,
             [FromServices] AppDbContext context
             )
@@ -27,17 +32,17 @@ namespace Todo.Controllers
             context.Todos.Add(todo);
             context.SaveChanges();
 
-            return todo;
+            return Created($"/{todo.Id}", todo);
         }
 
         [HttpPut("/")]
-        public TodoModel Put(
-            [FromBody] TodoModel todo,
-            [FromServices] AppDbContext context 
+        public IActionResult Put(
+            [FromRoute] TodoModel todo,
+            [FromServices] AppDbContext context
         )
         {
-            var model  =context.Todos.FirstOrDefault(x => x.Id == todo.Id);
-            if (model is null) return todo;
+            var model = context.Todos.FirstOrDefault(x => x.Id == todo.Id);
+            if (model is null) return NotFound();
 
             model.Title = todo.Title;
             model.CreateAt = todo.CreateAt;
@@ -46,7 +51,21 @@ namespace Todo.Controllers
             context.Todos.Update(model);
             context.SaveChanges();
 
-            return model;
+            return Ok(model);
+        }
+
+        [HttpGet("/{id:int}")]
+        public IActionResult Delete(
+            [FromRoute] int id,
+            [FromServices] AppDbContext context
+            )
+        {
+            var model = context.Todos.FirstOrDefault(x => x.Id == id);
+            if(model is null) return NotFound();
+
+            context.Todos.Remove(model);
+            context.SaveChanges();
+            return Ok(model);
         }
     }
 }
