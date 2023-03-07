@@ -71,3 +71,9 @@ C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\obj\Debug\net7.0\ref\Furl
 C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\Npgsql.dll
 C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\PgsqlDataTypes.dll
+C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\Flunt.dll
+C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\obj\Debug\net7.0\Furlan.dev.MvcApplicationPartsAssemblyInfo.cs
