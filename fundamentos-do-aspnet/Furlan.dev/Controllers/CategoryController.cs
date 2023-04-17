@@ -1,3 +1,4 @@
+using System.Net;
 using Furlan.dev.Data;
 using Furlan.dev.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -34,8 +35,20 @@ public class CategoryController : ControllerBase
         if(!category.EhValido())
             return BadRequest();
             
-        context.Categories.Add(category);
-        context.SaveChanges();
+        try
+        {
+            context.Categories.Add(category);
+            context.SaveChanges();
+        }
+        catch (DbUpdateException ex){
+            return StatusCode((int)HttpStatusCode.InternalServerError, " [Error: 500X1] -  Ops! Não foi possível adicionar a categoria.");
+            throw;
+        }
+        catch (Exception ex)
+        {
+            return StatusCode((int)HttpStatusCode.InternalServerError, "[Error: 500X2] - Ops! Ocorreu um erro interno no servidor.");
+            throw;
+        }
 
         return category == null ? Ok(category) : NotFound();
     }

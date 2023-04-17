@@ -15,7 +15,7 @@ namespace Furlan.dev.Models
         {
             AddNotifications(new Contract<Notification>()
                         .Requires()
-                        .IsEmpty(Name, "Name", "Nome da categoria deve estar.")
+                        .IsEmpty(Name, "Name", "Nome da categoria deve estar preenchido.")
                         .IsEmpty(Slug, "Slug", "Slug deve estar preenchido.")
             );
 
