@@ -14,8 +14,8 @@ namespace Furlan.dev.Controllers
         {
             var token = tokenService.GenerateToken(null);
             
-            return null;
+            return Ok(token);
         }
 
     }
-}
+} 
