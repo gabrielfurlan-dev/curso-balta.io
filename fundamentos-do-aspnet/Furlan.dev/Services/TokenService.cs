@@ -20,6 +20,7 @@ namespace Furlan.dev.Services
                 {
                     new Claim(type:ClaimTypes.Name, value:"gabrielfurlan"),
                     new Claim(type:ClaimTypes.Role, value:"admin"),
+                    new Claim(type:ClaimTypes.Role, value:"author"),
                     new Claim(type:"fruta", value:"banana"),
                 }),
                 Expires = DateTime.UtcNow.AddHours(8),
