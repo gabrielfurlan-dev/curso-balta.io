@@ -1,6 +1,5 @@
 using Furlan.dev.Data;
 using Furlan.dev.Models;
-// using Furlan.dev.Extensions;
 using Furlan.dev.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -77,12 +76,12 @@ namespace Furlan.dev.Controllers
 
             try
             {
-                var token = tokenService.GenerateToken(null);
+                var token = tokenService.GenerateToken(user);
                 return Ok(new ResultViewModel<string>(token, erros: null));
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
-                return StatusCode(500, new ResultViewModel<string>(error: "05X04 - Falha interna."));
+                return StatusCode(500, new ResultViewModel<string>(error: $"05X04 - Falha interna. {ex.Message}"));
             }
 
         }
