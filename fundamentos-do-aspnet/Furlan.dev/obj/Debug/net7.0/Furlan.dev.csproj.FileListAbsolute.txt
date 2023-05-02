@@ -78,3 +78,4 @@ C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\Swashbuc
 C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\obj\Debug\net7.0\Furlan.dev.MvcApplicationPartsAssemblyInfo.cs
 C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\dev\curso-balta.io\fundamentos-do-aspnet\Furlan.dev\bin\Debug\net7.0\SecureIdentity.dll

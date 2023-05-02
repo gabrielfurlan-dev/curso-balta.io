@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gUu279zbIcuViiSwTkqnWwFfjFpYaAAgAHGokNL1mV/g1lDz70bob1yN/hLrfWy+LPggKRzGukDHzPuZeP/OHQ==",
+  "dgSpecHash": "rZy0UrSk+rCIq9BEtOg/pALv025aXSvQfjAw7IZjwiuMd0+xJ1hzr+oWuTA81IPW5alvQN17DPD7xoumLl1cYw==",
   "success": true,
   "projectFilePath": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj",
   "expectedPackageFiles": [
@@ -48,6 +48,7 @@
     "C:\\Users\\adria\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.3\\npgsql.entityframeworkcore.postgresql.7.0.3.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\pgsqldatatypes\\1.0.0\\pgsqldatatypes.1.0.0.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

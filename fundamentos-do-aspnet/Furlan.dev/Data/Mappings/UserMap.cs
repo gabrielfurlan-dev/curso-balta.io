@@ -18,26 +18,38 @@ namespace Furlan.dev.Data.Mappings
 
             // Identity
             builder.Property(x => x.Id)
-                .ValueGeneratedOnAdd()
-                .UseIdentityColumn();
+                   .ValueGeneratedOnAdd()
+                   .UseIdentityColumn();
 
             // Propriedades
             builder.Property(x => x.Name)
-                .IsRequired()
-                .HasColumnName("Name")
-                .HasColumnType(EPgsqlDataTypes.Varchar.ToString())
-                .HasMaxLength(80);
+                   .IsRequired()
+                   .HasColumnName("Name")
+                   .HasColumnType(EPgsqlDataTypes.Varchar.ToString())
+                   .HasMaxLength(80);
 
-            builder.Property(x => x.Bio);
-            builder.Property(x => x.Email);
-            builder.Property(x => x.Image);
-            builder.Property(x => x.PasswordHash);
+            builder.Property(x => x.Bio)
+                   .IsRequired(false);
+
+            builder.Property(x => x.Email)
+                   .IsRequired()
+                   .HasColumnName("Email")
+                   .HasColumnType(EPgsqlDataTypes.Varchar.ToString())
+                   .HasMaxLength(160);
+
+            builder.Property(x => x.Image)
+                   .IsRequired(false);
+
+            builder.Property(x => x.PasswordHash)
+                   .IsRequired()
+                   .HasColumnName("PasswordHash")
+                   .HasColumnType(EPgsqlDataTypes.Varchar.ToString());
 
             builder.Property(x => x.Slug)
-                .IsRequired()
-                .HasColumnName("Slug")
-                .HasColumnType(EPgsqlDataTypes.Varchar.ToString())
-                .HasMaxLength(80);
+                   .IsRequired()
+                   .HasColumnName("Slug")
+                   .HasColumnType(EPgsqlDataTypes.Varchar.ToString())
+                   .HasMaxLength(80);
 
             // Índices
             builder
