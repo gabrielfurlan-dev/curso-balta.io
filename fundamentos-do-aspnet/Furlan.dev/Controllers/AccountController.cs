@@ -85,5 +85,12 @@ namespace Furlan.dev.Controllers
             }
 
         }
+
+        [HttpPost(template: "v1/login")]
+        public IActionResult login([FromServices] TokenService service)
+        {
+            var token = service.GenerateToken(null);
+            return Ok(token);
+        }
     }
 }

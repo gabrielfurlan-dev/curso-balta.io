@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/+4vDQWyVVvFxvT3HbDi3FW2YG1QbQySx+dfKLWB0VYcCantA0IsEpCglqZKsV+nkvtnMXeH4B/RmQEC0fvQug==",
+  "dgSpecHash": "HODyf7KZXemh8ZRddrBeLVIM6KrkPsfsMgvuYxDjSWRqIobV2GspZG8k2vwem2qsksU5E+TG63g1mo1ZzAsMng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adria\\source\\repos\\CursoBalta\\Calculadora\\Calculadora.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "c:\\dev\\curso-balta.io\\fundamentos-csharp\\Calculadora\\Calculadora.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adria\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.11\\microsoft.netcore.app.host.win-x64.6.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
