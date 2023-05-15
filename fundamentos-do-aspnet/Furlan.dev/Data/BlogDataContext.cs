@@ -16,7 +16,7 @@ namespace Furlan.dev.Data
         public DbSet<User>? Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseNpgsql(config.GetConnectionString("DefaultConnection"));
+            => options.UseNpgsql("User Id=postgres;Password=celk991931811;Server=db.cntdquqdbdamrwwmuswo.supabase.co;Port=5432;Database=postgres");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

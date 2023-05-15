@@ -10,24 +10,17 @@
         "projectUniqueName": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj",
         "projectName": "Furlan.dev",
         "projectPath": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj",
-        "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
         "outputPath": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/precisaosistemas/_packaging/InovaPay/nuget/v3/index.json": {},
-          "https://pkgs.dev.azure.com/precisaosistemas/_packaging/RecargaPS/nuget/v3/index.json": {},
-          "https://precisaosistemas.pkgs.visualstudio.com/_packaging/Bluedesk/nuget/v3/index.json": {},
-          "https://precisaosistemas.pkgs.visualstudio.com/_packaging/Inovafarma/nuget/v3/index.json": {},
-          "https://precisaosistemas.pkgs.visualstudio.com/_packaging/Precisao/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -99,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

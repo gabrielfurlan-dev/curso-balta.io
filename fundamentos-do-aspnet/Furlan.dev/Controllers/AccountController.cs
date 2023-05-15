@@ -19,7 +19,7 @@ namespace Furlan.dev.Controllers
         )
         {
             if (!ModelState.IsValid)
-                return BadRequest(new ResultViewModel<string>(ModelState));
+                return BadRequest("Model inválida");
 
             var user = new User
             {
@@ -38,19 +38,18 @@ namespace Furlan.dev.Controllers
                 await dataContext.Users.AddAsync(user);
                 await dataContext.SaveChangesAsync();
 
-                return Ok(new ResultViewModel<dynamic>(data: new
-                {
-                    user = user.Email,
-                    password
-                }));
+                Console.WriteLine("passou aqui");
+
+                return Ok(new { user = user.Email, password });
+
             }
             catch (DbUpdateException ex)
             {
-                return StatusCode(400, new ResultViewModel<string>(error: "05X99 - Este E-mail já está cadastrado."));
+                return StatusCode(400, "05X99 - Este E-mail já está cadastrado.");
             }
-            catch
+            catch (Exception ex)
             {
-                return StatusCode(500, new ResultViewModel<string>(error: "05X84 - Erro interno do servidor."));
+                return StatusCode(500, $"05X84 - Erro interno do servidor.{Environment.NewLine}{ex.Message}{Environment.NewLine}{ex.StackTrace}");
             }
         }
 

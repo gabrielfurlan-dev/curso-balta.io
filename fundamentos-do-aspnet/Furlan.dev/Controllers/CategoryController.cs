@@ -33,7 +33,7 @@ public class CategoryController : ControllerBase
     )
     {
         if(!category.EhValido())
-            return BadRequest();
+            return BadRequest(category.GetNotifications());
             
         try
         {
