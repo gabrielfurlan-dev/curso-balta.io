@@ -2,8 +2,9 @@ using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using Furlan.dev.Models;
 using Microsoft.IdentityModel.Tokens;
-using System.Security.Claims;
+// using System.Security.Claims;
 using Furlan.dev.Extensions;
+using System.Security.Claims;
 
 namespace Furlan.dev.Services
 {
@@ -15,11 +16,16 @@ namespace Furlan.dev.Services
 
             var key = Encoding.ASCII.GetBytes(Configuration.JwtKey);
 
-            var claims = user.GetClaims();
+            // var claims = user.GetClaims();
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(claims),
+                Subject = new ClaimsIdentity(new Claim[]{
+                    new Claim(type:ClaimTypes.Name,value:"Furlan"),
+                    new Claim(type:ClaimTypes.Role,value:"admin"),
+                    new Claim(type:"banana",value:"banana"),
+                    }
+                ),
                 Expires = DateTime.UtcNow.AddHours(8),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };

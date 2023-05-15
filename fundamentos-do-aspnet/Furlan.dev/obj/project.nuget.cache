@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "p3g7kIlCfalUVInwtHYLeVRxaOuDO50LgOQPgtNa9Gh4ZSZlCwmAUn2/FpuN9qRv3db5OmUaIBLfSKetEq/rLA==",
+=======
+  "dgSpecHash": "MkyKOnMcSevlgkYLqSzrpgrvluZ/2P93WVaeAVcuyVqk9MqqSrlFCwpSD5e3n3AYIaEhfI7IpeEfYghzAHrN7g==",
+>>>>>>> 9cabaa86acc20563ca5d50781e4c545621acd903
   "success": true,
-  "projectFilePath": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj",
+  "projectFilePath": "c:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

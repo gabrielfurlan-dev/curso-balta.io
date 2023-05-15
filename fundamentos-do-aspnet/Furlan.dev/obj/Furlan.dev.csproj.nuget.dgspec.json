@@ -1,17 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj": {}
+    "c:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj": {}
   },
   "projects": {
-    "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj": {
+    "c:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj",
+        "projectUniqueName": "c:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj",
         "projectName": "Furlan.dev",
+<<<<<<< HEAD
         "projectPath": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
         "outputPath": "C:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\obj\\",
+=======
+        "projectPath": "c:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\Furlan.dev.csproj",
+        "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
+        "outputPath": "c:\\dev\\curso-balta.io\\fundamentos-do-aspnet\\Furlan.dev\\obj\\",
+>>>>>>> 9cabaa86acc20563ca5d50781e4c545621acd903
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
