@@ -1,6 +1,7 @@
 using Furlan.dev.Data;
 using Furlan.dev.Models;
 using Furlan.dev.Service;
+using Furlan.dev.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SecureIdentity.Password;
