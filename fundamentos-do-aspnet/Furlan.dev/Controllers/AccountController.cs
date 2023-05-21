@@ -1,6 +1,6 @@
 using Furlan.dev.Data;
 using Furlan.dev.Models;
-using Furlan.dev.Services;
+using Furlan.dev.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SecureIdentity.Password;
@@ -15,6 +15,7 @@ namespace Furlan.dev.Controllers
         [HttpPost("v1/accounts/")]
         public async Task<IActionResult> Post(
             [FromBody] RegisterViewModel registerViewModel,
+            [FromServices] EmailService emailService,
             [FromServices] BlogDataContext dataContext
         )
         {
@@ -36,12 +37,14 @@ namespace Furlan.dev.Controllers
             try
             {
                 await dataContext.Users.AddAsync(user);
-                await dataContext.SaveChangesAsync();
-
-                Console.WriteLine("passou aqui");
-
-                return Ok(new { user = user.Email, password });
-
+                
+                if (emailService.Send(user.Name, user.Email, "Bem vindo ao Furlan.dev", $"Sua senha é {password}."))
+                {
+                    return Ok(new { user = user.Email, password });
+                    await dataContext.SaveChangesAsync();
+                }
+                else
+                    return BadRequest(new {Error = "Não possível cadastrar o usuário. Falha ao enviar email de confirmação."});
             }
             catch (DbUpdateException ex)
             {

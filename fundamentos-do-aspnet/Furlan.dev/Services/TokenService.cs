@@ -6,7 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using Furlan.dev.Extensions;
 using System.Security.Claims;
 
-namespace Furlan.dev.Services
+namespace Furlan.dev.Service
 {
     public class TokenService
     {
